@@ -1,0 +1,36 @@
+@import "color.scss";
+@import "reset.scss";
+@import "card.scss";
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+
+%centrer{
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+}
+
+
+body{
+  width: 100vw;
+  height: 100vh;
+  @extend %centrer;
+  background-color: $veryDarkBlue;
+  font-family: "Rubik";
+}
+
+.container-desktop{
+  width: 1440px;
+  height: 90%;
+  @extend %centrer;
+
+  .grid-container{
+    height: 60%;
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
