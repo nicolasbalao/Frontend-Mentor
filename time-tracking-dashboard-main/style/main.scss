@@ -23,14 +23,32 @@ body{
 
 .container-desktop{
   width: 1440px;
-  height: 90%;
   @extend %centrer;
 
   .grid-container{
-    height: 60%;
     width: 80%;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
+}
+
+//responsive
+
+@media screen and (max-width: 1080px){
+
+  body{
+    height: auto;
+  }
+
+  .container-desktop{
+    margin: 1rem;
+
+    .grid-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+
 }

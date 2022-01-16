@@ -4,39 +4,43 @@
     <title>Track app</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7ad34df1b6.js" crossorigin="anonymous"></script>
+    <link href="style/style.css" rel="stylesheet">
   </head>
   <body>
     <div class="container-desktop">
-      <div class="grid-container">
+      <div class="grid-container" id="grid-container">
         <div class="card-profile">
           <div class="top">
             <img src="assets/image-jeremy.png" alt="photo de profile">
-            <p class="light">Report for</p>
-            <p class="name">Jeremy Robson</p>
+            <div class="desc">
+              <p class="light">Report for</p>
+              <p class="name">Jeremy Robson</p>
+            </div>
           </div>
           <div class="bottom">
-            <a href="#">Daily</a>
-            <a href="#">Weekly</a>
-            <a href="#">Monthly</a>
+            <a href="#" id="btn-daily">Daily</a>
+            <a href="#" id="btn-weekly">Weekly</a>
+            <a href="#" id="btn-monthly">Monthly</a>
           </div>
         </div>
-          <div class="card">
+          <div class="card-activity">
             <div class="top">
               <img src="assets/icon-work.svg" alt="icon">
             </div>
               <div class="bottom">
-                <div class="top">
+                <div class="bottom-top">
                   <p>Work</p>
-                  <a href="">...</a>
+                <a href="#"><i class="fas fa-ellipsis-h"></i></a>
                 </div>
-                <div class="bottom">
-                  <p>32hrs</p>
+                <div class="bottom-bottom">
+                  <span>32hrs</span>
                   <p>Last Week - 36hrs</p>
               </div>
             </div>
           </div>
       </div>
     </div>
+    <script type="module" src="script.js"></script>
   </body>
 </html>
