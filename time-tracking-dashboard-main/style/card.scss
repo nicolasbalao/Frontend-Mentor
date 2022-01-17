@@ -24,18 +24,18 @@
     }
 
     .light{
-    font-weight: 400;
-    //color: $desaturatedBlue;
-    color: rgba(255, 255, 255, 0.3);
-    font-size: 1em;
-    margin-bottom: 0.3rem;
+      font-weight: 400;
+      color: $desaturatedBlue;
+      color: rgba(255, 255, 255, 0.3);
+      font-size: 1em;
+      margin-bottom: 0.3rem;
     }
 
     .name{
-    font-weight: 300;
-    font-size: 2.5em;
-    line-height: 45px;
-    color: white;
+      font-weight: 300;
+      font-size: 2.5em;
+      line-height: 45px;
+      color: white;
     }
   }
 
@@ -55,6 +55,10 @@
       &:hover{
         color: white;
       }
+
+    }
+    .active{
+      color: white;
     }
   }
 }
@@ -63,7 +67,7 @@
   border-radius: 10px;
   color:  white;
   margin: 1rem;
-  background-color: $orange;
+
 
   .top{
     border-radius: 10px;
@@ -99,6 +103,7 @@
       justify-content: space-between;
       align-items: center;
       font-size: 18px;
+      font-weight: 500;
       margin-bottom: 2rem;
 
       a{
@@ -121,6 +126,34 @@
 
   }
 }
+
+//color top: 0;
+
+#card-work{
+  background-color: $orange;
+}
+
+#card-play{
+  background-color: $blue;
+}
+
+#card-study{
+  background-color: $lightRed;
+}
+
+#card-exercice{
+  background-color: $limeGreen;
+}
+
+#card-social{
+  background-color: $violet;
+}
+
+#card-selfCare{
+  background-color: $softOrange;
+}
+
+
 
 //Responsive
 
