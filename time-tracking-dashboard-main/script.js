@@ -41,7 +41,7 @@ init();
 
 function init(){
   buttonDaily.className = "active";
-  updateData("daily");
+  updateData("daily","days");
 }
   
 buttonDaily.addEventListener("click", ()=>{
@@ -49,7 +49,7 @@ buttonDaily.addEventListener("click", ()=>{
   buttonWeekly.className = "";
   buttonDaily.className = "active";
 
-  updateData("daily");
+  updateData("daily", "days");
 
 });
 
@@ -58,7 +58,7 @@ buttonWeekly.addEventListener("click", ()=>{
   buttonMonthly.className = "";
   buttonWeekly.className = "active";
 
-  updateData("weekly");
+  updateData("weekly", "week");
 
 });
 
@@ -67,11 +67,11 @@ buttonMonthly.addEventListener("click", () => {
   buttonWeekly.className = "";
   buttonMonthly.className = "active";
 
-  updateData("monthly");
+  updateData("monthly", "month");
 
 });
 
-function updateData(_timeFrame){
+function updateData(_timeFrame, _title){
 
   fetch("./data.json")
     .then((rep) => rep.json())
@@ -79,7 +79,7 @@ function updateData(_timeFrame){
       console.log(data[0].timeframes[_timeFrame].current);
       for(let i = 0; i < allDataToUpdate.length; i++){
         allDataToUpdate[i][0].textContent = data[i].timeframes[_timeFrame].current + "hrs";
-        allDataToUpdate[i][1].textContent = "Last Week - " + data[i].timeframes[_timeFrame].previous  + "hrs";
+        allDataToUpdate[i][1].textContent = `Last  ${_title} - ` + data[i].timeframes[_timeFrame].previous  + "hrs";
       }
     })
 }
