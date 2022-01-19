@@ -195,6 +195,78 @@ table {
   border-radius: 100%;
 }
 
+.cart-window {
+  height: auto;
+  width: 400px;
+  display: none;
+  position: absolute;
+  background-color: white;
+  border-radius: 10px;
+  right: 60px;
+  top: 85px;
+  box-shadow: 0px 11px 30px -3px lightgray;
+}
+.cart-window .container {
+  padding: 1.5rem;
+  position: relative;
+}
+.cart-window .container .title {
+  width: 100%;
+}
+.cart-window .container .title p {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.cart-window .container .title::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: 0px;
+}
+.cart-window .container li {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.cart-window .container li .thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.cart-window .container li .description p {
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+  color: #b6bcc8;
+}
+.cart-window .container li .description p b {
+  color: black;
+  font-weight: 700;
+}
+.cart-window .container li .delete {
+  width: 15px;
+  height: 20px;
+}
+.cart-window .container button {
+  width: 100%;
+  height: 50px;
+  margin-top: 1.5rem;
+  background-color: #ff7d1a;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+
+.cart-window.active {
+  display: block;
+}
+
 body {
   height: 100vh;
   width: 100vw;

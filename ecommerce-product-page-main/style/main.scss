@@ -1,6 +1,7 @@
 @import "reset";
 @import "color.scss";
-@import "header.scss";
+@import "components/header/header.scss";
+@import "components/cart/cart.scss";
 
 //font
 @import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
