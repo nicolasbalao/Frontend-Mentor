@@ -185,7 +185,7 @@ table {
     min-height: 150px;
   }
   .card-profile .top {
-    height: 70%;
+    height: 100px;
     display: flex;
     padding: 0 0 0 1rem;
     flex-direction: row;
@@ -205,12 +205,15 @@ table {
     font-size: 1.2em;
   }
   .card-profile .bottom {
-    padding: 1rem;
+    height: 50px;
+    padding: 0 1rem;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
   .card-profile .bottom a {
+    padding: 0;
     font-size: 13px;
   }
 
