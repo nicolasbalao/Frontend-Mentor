@@ -1,2 +1,21 @@
 @import "reset";
 @import "color.scss";
+@import "header.scss";
+
+//font
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+//Desktop width 1440px
+
+body{
+  height: 100vh;
+  width: 100vw;
+  font-family: "Kumbh Sans";
+}
+
+.desktop-container{
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}

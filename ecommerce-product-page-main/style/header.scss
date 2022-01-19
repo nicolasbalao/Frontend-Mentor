@@ -1,0 +1,194 @@
+// HEADER NAV BAR
+
+
+.header{
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #e6e6e6;
+
+  //logo and nav bar
+  .left{
+    display: flex;
+    align-items: center;
+
+    .logo{
+      font-size: 30px;
+      font-weight: 700;
+      margin-right: 4rem;
+    }
+
+    nav ul{
+      display: flex;
+
+      li{
+        margin-right: 2rem;
+        position: relative;
+
+        a{
+          text-decoration: none;
+          color: $grayIshBlue;
+
+          &:hover {
+            color: black;
+          }
+
+        }
+
+        .marker{
+          width: 100%;
+          height: 4px;
+          visibility: hidden;
+          background-color: $orange;
+          position: absolute;
+          top: 55px;
+        }
+      }
+
+      .active{
+          a{
+            color: black;
+          }
+          .marker{
+            visibility: visible;
+          }
+        }
+
+    }
+  }
+
+  // cart and profile
+  .right{
+
+    display: flex;
+    position: relative;
+    align-items: center;
+
+    .cart{
+      margin-right: 4rem;
+      position: relative;
+      img{
+        width: 25px;
+        height: 25px;
+      }
+
+      // number of article
+      &::before{
+        content: "3";
+        width: 21px;
+        height: 12px;
+        border-radius: 12px;
+        font-size: 13px;
+        text-align: center;
+        background-color: $orange;
+        color: white;
+        position: absolute;
+        right: -8px;
+        top: -4px;
+
+      }
+    }
+
+    //window cart hidden
+    .cart-window{
+      height: auto;
+      width: 400px;
+      position: absolute;
+      border-radius: 10px;
+      right: -72px;
+      top: 70px;
+      box-shadow: 0px 11px 30px -3px lightgray;
+
+
+      .container{
+        padding: 1.5rem;
+        position: relative;
+
+        .title{
+          width: 100%;
+
+          p{
+            font-size: 20px;
+            font-weight: 700;
+            padding-bottom: 1rem;
+          }
+
+          //ligne de separation 
+          &::after{
+            content: "";
+            position: absolute;
+            width: 400px;
+            height: 1px ;
+            background-color: #e6e6e6;
+            left: 0px;
+          }
+        }
+
+        li{
+          padding: 1rem 0;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+
+          .thumbnail{
+            width: 60px;
+            height: 60px;
+            border-radius: 10px;
+          }
+
+          .description{
+            p{
+              font-size: 18px;
+              padding-bottom: 0.5rem;
+              color: $grayIshBlue;
+
+              b{
+                color: black;
+                font-weight: 700;
+              }
+            }
+          }
+
+          .delete{
+            width: 15px;
+            height: 20px;
+          }
+           
+        }
+
+        button{
+          width: 100%;
+          height: 50px;
+          margin-top: 1.5rem;
+          background-color: $orange;
+          color: white;
+          font-weight: 700;
+          font-size: 20px;
+          text-align: center;
+          border-radius: 10px;
+          border: none;
+
+        }
+
+
+      }
+
+      
+    }
+    .profile{
+      width: 60px;
+      height: 60px;
+      cursor: pointer;
+
+      &:hover{
+        border: solid 3px $orange;
+        border-radius: 100%;
+      }
+    }
+  }
+}
+
+

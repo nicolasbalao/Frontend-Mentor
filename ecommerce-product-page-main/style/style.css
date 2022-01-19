@@ -1,0 +1,210 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+a {
+  text-decoration: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.header {
+  width: 80%;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: solid 1px #e6e6e6;
+}
+.header .left {
+  display: flex;
+  align-items: center;
+}
+.header .left .logo {
+  font-size: 30px;
+  font-weight: 700;
+  margin-right: 4rem;
+}
+.header .left nav ul {
+  display: flex;
+}
+.header .left nav ul li {
+  margin-right: 2rem;
+  position: relative;
+}
+.header .left nav ul li a {
+  text-decoration: none;
+  color: #b6bcc8;
+}
+.header .left nav ul li a:hover {
+  color: black;
+}
+.header .left nav ul li .marker {
+  width: 100%;
+  height: 4px;
+  visibility: hidden;
+  background-color: #ff7d1a;
+  position: absolute;
+  top: 55px;
+}
+.header .left nav ul .active a {
+  color: black;
+}
+.header .left nav ul .active .marker {
+  visibility: visible;
+}
+.header .right {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.header .right .cart {
+  margin-right: 4rem;
+  position: relative;
+}
+.header .right .cart img {
+  width: 25px;
+  height: 25px;
+}
+.header .right .cart::before {
+  content: "3";
+  width: 21px;
+  height: 12px;
+  border-radius: 12px;
+  font-size: 13px;
+  text-align: center;
+  background-color: #ff7d1a;
+  color: white;
+  position: absolute;
+  right: -8px;
+  top: -4px;
+}
+.header .right .cart-window {
+  height: auto;
+  width: 400px;
+  position: absolute;
+  border-radius: 10px;
+  right: -72px;
+  top: 70px;
+  box-shadow: 0px 11px 30px -3px lightgray;
+}
+.header .right .cart-window .container {
+  padding: 1.5rem;
+  position: relative;
+}
+.header .right .cart-window .container .title {
+  width: 100%;
+}
+.header .right .cart-window .container .title p {
+  font-size: 20px;
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+.header .right .cart-window .container .title::after {
+  content: "";
+  position: absolute;
+  width: 400px;
+  height: 1px;
+  background-color: #e6e6e6;
+  left: 0px;
+}
+.header .right .cart-window .container li {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .right .cart-window .container li .thumbnail {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+.header .right .cart-window .container li .description p {
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+  color: #b6bcc8;
+}
+.header .right .cart-window .container li .description p b {
+  color: black;
+  font-weight: 700;
+}
+.header .right .cart-window .container li .delete {
+  width: 15px;
+  height: 20px;
+}
+.header .right .cart-window .container button {
+  width: 100%;
+  height: 50px;
+  margin-top: 1.5rem;
+  background-color: #ff7d1a;
+  color: white;
+  font-weight: 700;
+  font-size: 20px;
+  text-align: center;
+  border-radius: 10px;
+  border: none;
+}
+.header .right .profile {
+  width: 60px;
+  height: 60px;
+  cursor: pointer;
+}
+.header .right .profile:hover {
+  border: solid 3px #ff7d1a;
+  border-radius: 100%;
+}
+
+body {
+  height: 100vh;
+  width: 100vw;
+  font-family: "Kumbh Sans";
+}
+
+.desktop-container {
+  width: 1440px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+/*# sourceMappingURL=style.css.map */
