@@ -1,0 +1,49 @@
+header {
+  padding: 2rem 3.8rem;
+  .logo {
+    margin-top: 0.5rem;
+    width: 48px;
+    height: 48px;
+  }
+
+  .menu-hamburger-group {
+    .hamburger {
+      display: none;
+    }
+
+    .menu {
+      height: unset;
+      width: 58.5%;
+
+      .close-menu {
+        display: none;
+      }
+
+      ul {
+        padding-left: 4.7rem;
+        flex-direction: row;
+        gap: 3.6rem;
+
+        li {
+          padding: 3.95rem 0rem 3.7rem 0rem;
+          a {
+            font-size: 14px;
+            letter-spacing: 2.36px;
+            span {
+              display: none;
+            }
+          }
+        }
+
+        .active {
+          border-right: none;
+          border-bottom: 3px solid white;
+        }
+      }
+    }
+
+    .hidden {
+      display: unset;
+    }
+  }
+}

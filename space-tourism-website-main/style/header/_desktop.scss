@@ -1,0 +1,63 @@
+header {
+  margin: 4rem 0rem 0rem 1.7rem;
+
+  .menu-hamburger-group {
+    .menu {
+      margin-top: 4rem;
+      width: 57.5%;
+
+      ul {
+        padding-left: 12.29rem;
+
+        gap: 4.99rem;
+
+        li {
+          a {
+            opacity: 0.7;
+            font-size: 16px;
+            span {
+              font-size: 16px;
+              display: unset;
+              margin-right: 0.35rem;
+            }
+          }
+
+          &:nth-of-type(2) {
+            a {
+              span {
+                margin-right: 0.8rem;
+              }
+
+              margin-right: 0.2rem;
+            }
+          }
+
+          &:nth-of-type(3) {
+            a {
+              span {
+                margin-right: 0.5rem;
+              }
+
+              margin-right: 0.15rem;
+            }
+          }
+        }
+      }
+
+      &::before {
+        position: absolute;
+        content: "";
+        background-color: #979797;
+        opacity: 0.3;
+        height: 1px;
+        width: 57%;
+        top: 50%;
+        left: -54%;
+      }
+    }
+
+    .hidden {
+      display: unset;
+    }
+  }
+}

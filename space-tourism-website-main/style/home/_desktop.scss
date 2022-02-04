@@ -1,0 +1,42 @@
+.content {
+  text-align: unset;
+
+  padding: 0rem 16rem;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  margin-top: 25.5rem;
+
+  .description {
+    margin-left: 0.59rem;
+    .little-title {
+      opacity: 0.7; //gray
+      font-size: 28px;
+      letter-spacing: 4.72px;
+      line-height: 33, 6px;
+
+      margin-bottom: 2.5rem;
+    }
+
+    .para-description {
+      margin-top: 2.6rem;
+      p {
+        color: #d0d6f9;
+        opacity: 0.7;
+        font-size: 18;
+        line-height: 32px;
+        padding: 0 24rem 0 0;
+      }
+    }
+  }
+
+  .explore {
+    margin-top: 10.8rem;
+    .btn-explore {
+      width: 274px;
+      height: 274px;
+    }
+  }
+}

@@ -1,0 +1,349 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bellefair", serif;
+}
+
+@media screen and (min-width: 375px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding: 1.5rem 2.4rem;
+  }
+  header .logo {
+    width: 40px;
+    height: 40px;
+  }
+  header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header .menu-hamburger-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu-hamburger-group .menu {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81px);
+            backdrop-filter: blur(81px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 68%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  header .menu-hamburger-group .menu .close-menu {
+    margin: 3rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  header .menu-hamburger-group .menu .close-menu:hover {
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 3.3rem;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.3rem;
+  }
+  header .menu-hamburger-group .menu ul li {
+    letter-spacing: 2.7px;
+    padding: 0.5rem 0;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    font-family: "Barlow Condensed";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    font-weight: 700;
+  }
+  header .menu-hamburger-group .menu ul .active {
+    border-right: 3px solid white;
+  }
+  header .menu-hamburger-group .hidden {
+    display: none;
+  }
+  header .menu-hamburger-group .hamburger {
+    padding: 1.6rem 0;
+  }
+  header .menu-hamburger-group .hamburger:hover {
+    cursor: pointer;
+  }
+  .content {
+    margin-top: 2.2rem;
+    text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 8.5rem;
+  }
+  .content .description .little-title {
+    color: #d0d6f9;
+    font-family: "Barlow Condensed";
+    font-size: 16px;
+    letter-spacing: 2.7px;
+  }
+  .content .description .big-title {
+    margin-top: 2rem;
+    font-size: 80px;
+  }
+  .content .description .para-description {
+    margin-top: 2.2rem;
+  }
+  .content .description .para-description p {
+    color: #d0d6f9;
+    padding: 0rem 2.4rem;
+    font-size: 15px;
+    font-family: "Barlow";
+    line-height: 25px;
+    text-align: center;
+  }
+  .content .explore .btn-explore {
+    font-family: "Bellefair";
+    font-size: 22px;
+    background-color: white;
+    text-align: center;
+    width: 150px;
+    height: 150px;
+    border: none;
+    border-radius: 50%;
+  }
+  .content .explore .btn-explore:hover {
+    cursor: pointer;
+  }
+  html {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem 3.8rem;
+  }
+  header .logo {
+    margin-top: 0.5rem;
+    width: 48px;
+    height: 48px;
+  }
+  header .menu-hamburger-group .hamburger {
+    display: none;
+  }
+  header .menu-hamburger-group .menu {
+    height: unset;
+    width: 58.5%;
+  }
+  header .menu-hamburger-group .menu .close-menu {
+    display: none;
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 4.7rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3.6rem;
+  }
+  header .menu-hamburger-group .menu ul li {
+    padding: 3.95rem 0rem 3.7rem 0rem;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    display: none;
+  }
+  header .menu-hamburger-group .menu ul .active {
+    border-right: none;
+    border-bottom: 3px solid white;
+  }
+  header .menu-hamburger-group .hidden {
+    display: unset;
+  }
+  .content {
+    margin-top: 11.1rem;
+    gap: 15.5rem;
+  }
+  .content .description .little-title {
+    font-size: 20px;
+    letter-spacing: 3.38px;
+  }
+  .content .description .big-title {
+    margin-top: 1.3rem;
+    font-size: 150px;
+  }
+  .content .description .para-description {
+    margin-top: 1.2rem;
+  }
+  .content .description .para-description p {
+    padding: 0rem 16rem;
+    font-size: 16px;
+    line-height: 28px;
+    text-align: unset;
+  }
+  .content .explore .btn-explore {
+    width: 242px;
+    height: 242px;
+    font-size: 32px;
+  }
+  html {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    margin: 4rem 0rem 0rem 1.7rem;
+  }
+  header .menu-hamburger-group .menu {
+    margin-top: 4rem;
+    width: 57.5%;
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 12.29rem;
+    gap: 4.99rem;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    opacity: 0.7;
+    font-size: 16px;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    font-size: 16px;
+    display: unset;
+    margin-right: 0.35rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(2) a {
+    margin-right: 0.2rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(2) a span {
+    margin-right: 0.8rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(3) a {
+    margin-right: 0.15rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(3) a span {
+    margin-right: 0.5rem;
+  }
+  header .menu-hamburger-group .menu::before {
+    position: absolute;
+    content: "";
+    background-color: #979797;
+    opacity: 0.3;
+    height: 1px;
+    width: 57%;
+    top: 50%;
+    left: -54%;
+  }
+  header .menu-hamburger-group .hidden {
+    display: unset;
+  }
+  .content {
+    text-align: unset;
+    padding: 0rem 16rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 25.5rem;
+  }
+  .content .description {
+    margin-left: 0.59rem;
+  }
+  .content .description .little-title {
+    opacity: 0.7;
+    font-size: 28px;
+    letter-spacing: 4.72px;
+    line-height: 33, 6px;
+    margin-bottom: 2.5rem;
+  }
+  .content .description .para-description {
+    margin-top: 2.6rem;
+  }
+  .content .description .para-description p {
+    color: #d0d6f9;
+    opacity: 0.7;
+    font-size: 18;
+    line-height: 32px;
+    padding: 0 24rem 0 0;
+  }
+  .content .explore {
+    margin-top: 10.8rem;
+  }
+  .content .explore .btn-explore {
+    width: 274px;
+    height: 274px;
+  }
+  html {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+/*# sourceMappingURL=home.css.map */

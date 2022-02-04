@@ -1,0 +1,69 @@
+.content {
+  flex-direction: row;
+
+  //gap: 3.4rem;
+
+  gap: 20%;
+
+  padding: 3.6rem 15rem;
+
+  .title-planet-navigation-group {
+    .title {
+      font-size: 2.8rem;
+      letter-spacing: 4.72px;
+
+      margin-bottom: 10rem;
+      padding-left: 0.1rem;
+
+      span {
+        margin-right: 1.4rem;
+      }
+    }
+
+    .planet {
+      width: 445px;
+      height: 445px;
+
+      margin-left: 8rem;
+    }
+
+    .navigation {
+      padding: 0;
+    }
+  }
+
+  .description-caracteristiques-group {
+    padding-left: 12.3rem;
+    margin-top: 17rem;
+    .description {
+      text-align: start;
+      margin-bottom: 5.4rem;
+      .title-name-planet {
+        font-size: 10rem;
+        margin-bottom: 1.5rem;
+      }
+
+      .text-description {
+        p {
+          text-align: unset;
+          padding-left: 0;
+          padding-right: 1rem;
+          font-size: 1.8rem;
+          line-height: 32px;
+        }
+      }
+    }
+
+    .separator {
+      width: 93%;
+      margin-left: 0;
+    }
+
+    .caracteristiques {
+      justify-content: start;
+      text-align: start;
+
+      gap: 8.2rem;
+    }
+  }
+}

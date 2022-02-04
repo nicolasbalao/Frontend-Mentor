@@ -1,0 +1,38 @@
+@import "../general";
+
+//MOBILE
+@media screen and (min-width: 375px) {
+  @import "../header/header";
+  @import "content";
+
+  html {
+    background-image: url("../../assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+
+//TABLETTE
+
+@media screen and (min-width: 768px) {
+  @import "../header/tablette";
+  @import "../home/tablette";
+
+  html {
+    background-image: url("../../assets/home/background-home-tablet.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+
+//DESKTOP
+@media screen and (min-width: 1440px) {
+  @import "../header/desktop";
+  @import "../home/desktop";
+
+  html {
+    background-image: url("../../assets/home/background-home-desktop.jpg");
+    background-size: cover;
+    color: white;
+  }
+}

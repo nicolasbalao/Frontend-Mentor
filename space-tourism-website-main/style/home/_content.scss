@@ -1,0 +1,54 @@
+.content {
+  margin-top: 2.2rem;
+
+  text-align: center;
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 8.5rem;
+
+  .description {
+    .little-title {
+      color: #d0d6f9;
+      font-family: "Barlow Condensed";
+      font-size: 16px;
+      letter-spacing: 2.7px;
+    }
+
+    .big-title {
+      margin-top: 2rem;
+      font-size: 80px;
+    }
+
+    .para-description {
+      margin-top: 2.2rem;
+      p {
+        color: #d0d6f9;
+        padding: 0rem 2.4rem;
+        font-size: 15px;
+        font-family: "Barlow";
+        line-height: 25px;
+
+        text-align: center;
+      }
+    }
+  }
+
+  .explore {
+    .btn-explore {
+      font-family: "Bellefair";
+      font-size: 22px;
+      background-color: white;
+      text-align: center;
+      width: 150px;
+      height: 150px;
+      border: none;
+      border-radius: 50%;
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}

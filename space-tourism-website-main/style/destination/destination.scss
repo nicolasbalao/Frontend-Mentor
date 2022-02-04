@@ -1,0 +1,36 @@
+@import "../general";
+
+@media screen and (min-width: 375px) {
+  @import "../header/header";
+  @import "./content";
+
+  html {
+    background-image: url("../../assets/destination/background-destination-mobile.jpg");
+    background-size: cover;
+    color: white;
+
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @import "../header/tablette";
+  @import "./tablette";
+
+  html {
+    background-image: url("../../assets/destination/background-destination-tablet.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @import "../header/desktop";
+  @import "./desktop";
+
+  html {
+    background-image: url("../../assets/destination/background-destination-desktop.jpg");
+    background-size: cover;
+    color: white;
+  }
+}
