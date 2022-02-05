@@ -1,0 +1,61 @@
+.content {
+  height: 85vh;
+  flex-wrap: wrap;
+  align-items: unset;
+
+  overflow: hidden;
+
+  padding-top: 8.2rem;
+  padding-left: 16.2rem;
+
+  .content__title {
+    margin: 0;
+    margin-bottom: 15.5rem;
+
+    font-size: 2.8em;
+    letter-spacing: 4.72px;
+
+    span {
+      margin-right: 1rem;
+    }
+  }
+
+  .content__imagePeople {
+    width: 56.8rem;
+    height: 71.2rem;
+  }
+
+  .content__nav {
+    nav {
+      gap: 2.4rem;
+      .content__nav_dote {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
+  }
+
+  .content__description {
+    text-align: unset;
+    .content__description_job {
+      font-size: 3.2em;
+      margin-bottom: 1.5rem;
+    }
+
+    .content__description_name {
+      font-size: 5.6em;
+      margin-bottom: 2.6rem;
+    }
+
+    .content__description_text {
+      width: 444px;
+      font-size: 1.8em;
+
+      margin-bottom: 8.1rem;
+      p {
+        line-height: 3.2rem;
+        padding: 0rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.content {
+  flex-direction: row;
+  gap: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: 10rem;
+
+  position: relative;
+
+  .content__title {
+    font-size: 2.8em;
+    letter-spacing: 4.72px;
+
+    position: absolute;
+    top: 11.5%;
+    left: 9.5%;
+  }
+
+  .content__imageTech {
+    width: 51.5rem;
+    height: 52.7rem;
+
+    margin-top: 9.8rem;
+
+    order: 4;
+  }
+
+  .content__nav {
+    margin-top: 6rem;
+    margin-left: 6.6rem;
+    nav {
+      flex-direction: column;
+      gap: 3rem;
+
+      .content__nav_circle {
+        width: 8rem;
+        height: 8rem;
+      }
+    }
+  }
+
+  .content__description {
+    text-align: start;
+    max-width: 47rem;
+
+    margin-right: 5rem;
+
+    .content__description_title {
+      margin-top: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .content__description_nameTech {
+      font-size: 5.6em;
+    }
+
+    .content__description_text {
+      font-size: 1.8em;
+
+      p {
+        padding: unset;
+        text-align: start;
+        line-height: 3.2rem;
+      }
+    }
+  }
+}

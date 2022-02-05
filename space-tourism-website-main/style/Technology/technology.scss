@@ -1,0 +1,40 @@
+@import "../general";
+
+@media screen and (min-width: 375px) {
+  @import "../header/header";
+  @import "./content";
+
+  html {
+    background: url("../../assets/technology/background-technology-mobile.jpg");
+    background-size: cover;
+    color: white;
+
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  @import "../header/tablette";
+  @import "./tablet";
+
+  html {
+    background: url("../../assets/technology/background-technology-tablet.jpg");
+    background-size: cover;
+    color: white;
+
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  @import "../header/desktop";
+  @import "./desktop";
+
+  html {
+    background: url("../../assets/technology/background-technology-desktop.jpg");
+    background-size: cover;
+    color: white;
+
+    font-size: 62.5%;
+  }
+}

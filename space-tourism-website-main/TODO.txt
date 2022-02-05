@@ -1,0 +1,10 @@
+-----CSS-------------
+
+.  Check CSS hover effect for explore and header navbar
+.  Rebuild responvive and the end
+.  Page technologie replace img by background for change it in media queries
+
+------JS-------------
+
+.   Init for each page good path for assets and pages (logo header, path page navabar)
+.   Active class ...

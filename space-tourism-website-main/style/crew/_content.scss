@@ -1,0 +1,92 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .content__title {
+    font-size: 1.6em;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed";
+
+    margin-bottom: 3.3rem;
+
+    span {
+      font-weight: 700;
+      margin-right: 0.7rem;
+
+      opacity: 0.25;
+    }
+  }
+
+  .content__imagePeople {
+    width: 327px;
+    height: 223px;
+    text-align: center;
+
+    margin-bottom: 3.2rem;
+
+    border-bottom: solid 1px rgba($color: #ffffff, $alpha: 0.3);
+    img {
+      max-width: 100%;
+      max-height: 100%;
+
+      margin-left: 1rem;
+    }
+  }
+
+  .content__nav {
+    margin-bottom: 3.2rem;
+    nav {
+      display: flex;
+      gap: 1.6rem;
+
+      .content__nav_dote {
+        width: 10px;
+        height: 10px;
+
+        border-radius: 50%;
+
+        background-color: #ffffff;
+        opacity: 0.17;
+
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .content__nav_dote--active {
+        opacity: 1;
+      }
+    }
+  }
+
+  .content__description {
+    text-align: center;
+    .content__description_job {
+      font-size: 1.6em;
+      opacity: 0.5;
+
+      margin-bottom: 0.9rem;
+    }
+
+    .content__description_name {
+      font-size: 2.4em;
+      margin-bottom: 1.6rem;
+    }
+
+    .content__description_text {
+      font-size: 1.5em;
+      line-height: 2.5rem;
+      font-family: "Barlow";
+
+      color: #d0d6f9;
+
+      opacity: 0.7;
+
+      p {
+        padding: 0rem 2.8rem;
+      }
+    }
+  }
+}

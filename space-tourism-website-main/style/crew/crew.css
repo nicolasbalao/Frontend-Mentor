@@ -1,0 +1,415 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Bellefair", serif;
+}
+
+@media screen and (min-width: 375px) {
+  header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    position: relative;
+    padding: 1.5rem 2.4rem;
+  }
+  header .logo {
+    width: 40px;
+    height: 40px;
+  }
+  header .logo img {
+    width: 100%;
+    height: 100%;
+  }
+  header .menu-hamburger-group {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  header .menu-hamburger-group .menu {
+    background: rgba(255, 255, 255, 0.04);
+    -webkit-backdrop-filter: blur(81px);
+            backdrop-filter: blur(81px);
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 68%;
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 3.2rem;
+  }
+  header .menu-hamburger-group .menu .close-menu {
+    margin: 3rem;
+    -ms-flex-item-align: end;
+        align-self: flex-end;
+    -webkit-transition: -webkit-transform 0.3s ease;
+    transition: -webkit-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+  }
+  header .menu-hamburger-group .menu .close-menu:hover {
+    cursor: pointer;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 3.3rem;
+    list-style: none;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 2.3rem;
+  }
+  header .menu-hamburger-group .menu ul li {
+    letter-spacing: 2.7px;
+    padding: 0.5rem 0;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    font-family: "Barlow Condensed";
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: normal;
+    color: white;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    font-weight: 700;
+  }
+  header .menu-hamburger-group .menu ul .active {
+    border-right: 3px solid white;
+  }
+  header .menu-hamburger-group .hidden {
+    display: none;
+  }
+  header .menu-hamburger-group .hamburger {
+    padding: 1.6rem 0;
+  }
+  header .menu-hamburger-group .hamburger:hover {
+    cursor: pointer;
+  }
+  .content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .content .content__title {
+    font-size: 1.6em;
+    letter-spacing: 2.7px;
+    font-family: "Barlow Condensed";
+    margin-bottom: 3.3rem;
+  }
+  .content .content__title span {
+    font-weight: 700;
+    margin-right: 0.7rem;
+    opacity: 0.25;
+  }
+  .content .content__imagePeople {
+    width: 327px;
+    height: 223px;
+    text-align: center;
+    margin-bottom: 3.2rem;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+  }
+  .content .content__imagePeople img {
+    max-width: 100%;
+    max-height: 100%;
+    margin-left: 1rem;
+  }
+  .content .content__nav {
+    margin-bottom: 3.2rem;
+  }
+  .content .content__nav nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.6rem;
+  }
+  .content .content__nav nav .content__nav_dote {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    opacity: 0.17;
+  }
+  .content .content__nav nav .content__nav_dote:hover {
+    cursor: pointer;
+  }
+  .content .content__nav nav .content__nav_dote--active {
+    opacity: 1;
+  }
+  .content .content__description {
+    text-align: center;
+  }
+  .content .content__description .content__description_job {
+    font-size: 1.6em;
+    opacity: 0.5;
+    margin-bottom: 0.9rem;
+  }
+  .content .content__description .content__description_name {
+    font-size: 2.4em;
+    margin-bottom: 1.6rem;
+  }
+  .content .content__description .content__description_text {
+    font-size: 1.5em;
+    line-height: 2.5rem;
+    font-family: "Barlow";
+    color: #d0d6f9;
+    opacity: 0.7;
+  }
+  .content .content__description .content__description_text p {
+    padding: 0rem 2.8rem;
+  }
+  html {
+    background-image: url("../../assets/crew/background-crew-mobile.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  header {
+    padding: 2rem 3.8rem;
+  }
+  header .logo {
+    margin-top: 0.5rem;
+    width: 48px;
+    height: 48px;
+  }
+  header .menu-hamburger-group .hamburger {
+    display: none;
+  }
+  header .menu-hamburger-group .menu {
+    height: unset;
+    width: 58.5%;
+  }
+  header .menu-hamburger-group .menu .close-menu {
+    display: none;
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 4.7rem;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 3.6rem;
+  }
+  header .menu-hamburger-group .menu ul li {
+    padding: 3.95rem 0rem 3.7rem 0rem;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    font-size: 14px;
+    letter-spacing: 2.36px;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    display: none;
+  }
+  header .menu-hamburger-group .menu ul .active {
+    border-right: none;
+    border-bottom: 3px solid white;
+  }
+  header .menu-hamburger-group .hidden {
+    display: unset;
+  }
+  .content {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+  }
+  .content .content__title {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    font-size: 2em;
+    letter-spacing: 3.38px;
+    margin: 4.4rem 0rem 5.9rem 3.5rem;
+  }
+  .content .content__imagePeople {
+    width: 45.637rem;
+    height: 52.2rem;
+    -webkit-box-ordinal-group: 4;
+        -ms-flex-order: 3;
+            order: 3;
+  }
+  .content .content__nav {
+    margin-right: 0.5rem;
+    margin-bottom: 5rem;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .content .content__description {
+    margin-right: 0.5rem;
+    margin-bottom: 4rem;
+  }
+  .content .content__description .content__description_job {
+    font-size: 2.4em;
+  }
+  .content .content__description .content__description_name {
+    font-size: 4em;
+  }
+  .content .content__description .content__description_text {
+    font-size: 1.6em;
+  }
+  .content .content__description .content__description_text p {
+    padding: 0rem 15.2rem;
+    line-height: 2.8rem;
+  }
+  html {
+    background-image: url("../../assets/crew/background-crew-tablet.jpg");
+    background-size: cover;
+    color: white;
+    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  header {
+    margin: 4rem 0rem 0rem 1.7rem;
+  }
+  header .menu-hamburger-group .menu {
+    margin-top: 4rem;
+    width: 57.5%;
+  }
+  header .menu-hamburger-group .menu ul {
+    padding-left: 12.29rem;
+    gap: 4.99rem;
+  }
+  header .menu-hamburger-group .menu ul li a {
+    opacity: 0.7;
+    font-size: 16px;
+  }
+  header .menu-hamburger-group .menu ul li a span {
+    font-size: 16px;
+    display: unset;
+    margin-right: 0.35rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(2) a {
+    margin-right: 0.2rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(2) a span {
+    margin-right: 0.8rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(3) a {
+    margin-right: 0.15rem;
+  }
+  header .menu-hamburger-group .menu ul li:nth-of-type(3) a span {
+    margin-right: 0.5rem;
+  }
+  header .menu-hamburger-group .menu::before {
+    position: absolute;
+    content: "";
+    background-color: #979797;
+    opacity: 0.3;
+    height: 1px;
+    width: 57%;
+    top: 50%;
+    left: -54%;
+  }
+  header .menu-hamburger-group .hidden {
+    display: unset;
+  }
+  .content {
+    height: 85vh;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
+    overflow: hidden;
+    padding-top: 8.2rem;
+    padding-left: 16.2rem;
+  }
+  .content .content__title {
+    margin: 0;
+    margin-bottom: 15.5rem;
+    font-size: 2.8em;
+    letter-spacing: 4.72px;
+  }
+  .content .content__title span {
+    margin-right: 1rem;
+  }
+  .content .content__imagePeople {
+    width: 56.8rem;
+    height: 71.2rem;
+  }
+  .content .content__nav nav {
+    gap: 2.4rem;
+  }
+  .content .content__nav nav .content__nav_dote {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .content .content__description {
+    text-align: unset;
+  }
+  .content .content__description .content__description_job {
+    font-size: 3.2em;
+    margin-bottom: 1.5rem;
+  }
+  .content .content__description .content__description_name {
+    font-size: 5.6em;
+    margin-bottom: 2.6rem;
+  }
+  .content .content__description .content__description_text {
+    width: 444px;
+    font-size: 1.8em;
+    margin-bottom: 8.1rem;
+  }
+  .content .content__description .content__description_text p {
+    line-height: 3.2rem;
+    padding: 0rem;
+  }
+  html {
+    background-image: url("../../assets/crew/background-crew-desktop.jpg");
+    background-size: cover;
+    color: white;
+    height: 100vh;
+    font-size: 62.5%;
+  }
+}
+/*# sourceMappingURL=crew.css.map */
