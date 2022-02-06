@@ -22,7 +22,7 @@
     <!--CSS-->
     <link rel="stylesheet" href="style/home/home.css" />
 
-    <!--TEST JQERY-->
+    <!--JS-->
 
     <title>Frontend Mentor | Space tourism website</title>
   </head>
@@ -82,5 +82,19 @@
         </section>
       </div>
     </div>
+    <script>
+      //togle menu smartphone (PS: c'est pas tres bo')
+
+      const menu = document.querySelector(".menu");
+      const openMenu = document.querySelector(".hamburger");
+      const closeMenu = document.querySelector(".close-menu");
+
+      openMenu.addEventListener("click", () => {
+        menu.classList.remove("hidden");
+      });
+      closeMenu.addEventListener("click", () => {
+        menu.classList.add("hidden");
+      });
+    </script>
   </body>
 </html>

@@ -45,9 +45,10 @@
       height: 150px;
       border: none;
       border-radius: 50%;
+      cursor: pointer;
 
       &:hover {
-        cursor: pointer;
+        box-shadow: 0px 0px 2px 60px rgba(100, 96, 96, 0.1);
       }
     }
   }

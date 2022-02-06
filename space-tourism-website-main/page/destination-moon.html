@@ -22,6 +22,9 @@
     <!--CSS-->
     <link rel="stylesheet" href="../style/destination/destination.css" />
 
+    <!--JS-->
+    <script src="../js/destination.js" defer></script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
@@ -40,7 +43,7 @@
           </div>
           <!--PLANET IMG-->
           <img
-            src="/assets/destination/image-moon.png"
+            src="../assets/destination/image-moon.png"
             alt="moon"
             class="planet"
           />
@@ -48,10 +51,18 @@
           <div class="navigation">
             <nav>
               <ul>
-                <li class="active"><a href="#">MOON</a></li>
-                <li><a href="#">MARS</a></li>
-                <li><a href="#">EUROPA</a></li>
-                <li><a href="#">TITAN</a></li>
+                <li class="Moon active" onclick="updateData('Moon')">
+                  <a href="#">MOON</a>
+                </li>
+                <li class="Mars" onclick="updateData('Mars')">
+                  <a href="#">MARS</a>
+                </li>
+                <li class="Europa" onclick="updateData('Europa')">
+                  <a href="#">EUROPA</a>
+                </li>
+                <li class="Titan" onclick="updateData('Titan')">
+                  <a href="#">TITAN</a>
+                </li>
               </ul>
             </nav>
           </div>
@@ -89,12 +100,5 @@
         </section>
       </div>
     </div>
-
-    <!-- 00 Home 01 Destination 02 Crew 03 Technology 01 Pick your destination Moon
-    Mars Europa Titan Moon See our planet as you’ve never seen it before. A
-    perfect relaxing trip away to help regain perspective and come back
-    refreshed. While you’re there, take in some history by visiting the Luna 2
-    and Apollo 11 landing sites. Avg. distance 384,400 km Est. travel time 3
-    days -->
   </body>
 </html>

@@ -50,8 +50,10 @@
         background-color: #ffffff;
         opacity: 0.17;
 
+        cursor: pointer;
+
         &:hover {
-          cursor: pointer;
+          opacity: 0.5;
         }
       }
 
@@ -64,6 +66,7 @@
   .content__description {
     text-align: center;
     .content__description_job {
+      text-transform: uppercase;
       font-size: 1.6em;
       opacity: 0.5;
 
@@ -71,6 +74,7 @@
     }
 
     .content__description_name {
+      text-transform: uppercase;
       font-size: 2.4em;
       margin-bottom: 1.6rem;
     }

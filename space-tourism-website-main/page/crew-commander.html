@@ -21,6 +21,9 @@
       rel="stylesheet"
     />
 
+    <!--JS-->
+    <script src="../js/crew.js" defer></script>
+
     <title>Frontend Mentor | Space tourism website</title>
   </head>
   <body>
@@ -40,11 +43,25 @@
         <div class="content__nav">
           <nav>
             <div
+              id="0"
               class="content__nav_dote content__nav_dote--active content__nav_dote--douglas"
+              onclick="updateData('Commander','0')"
             ></div>
-            <div class="content__nav_dote content__nav_dote--mark"></div>
-            <div class="content__nav_dote content__nav_dote--viktor"></div>
-            <div class="content__nav_dote content__nav_dote--anousheh"></div>
+            <div
+              id="1"
+              class="content__nav_dote content__nav_dote--mark"
+              onclick="updateData('Mission Specialist', '1')"
+            ></div>
+            <div
+              id="2"
+              class="content__nav_dote content__nav_dote--viktor"
+              onclick="updateData('Pilot','2')"
+            ></div>
+            <div
+              id="3"
+              class="content__nav_dote content__nav_dote--anousheh"
+              onclick="updateData('Flight Engineer','3')"
+            ></div>
           </nav>
         </div>
         <div class="content__description">

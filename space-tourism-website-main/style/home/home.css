@@ -164,9 +164,11 @@ body {
     height: 150px;
     border: none;
     border-radius: 50%;
+    cursor: pointer;
   }
   .content .explore .btn-explore:hover {
-    cursor: pointer;
+    -webkit-box-shadow: 0px 0px 2px 60px rgba(100, 96, 96, 0.1);
+            box-shadow: 0px 0px 2px 60px rgba(100, 96, 96, 0.1);
   }
   html {
     background-image: url("../../assets/home/background-home-mobile.jpg");
@@ -211,6 +213,9 @@ body {
   }
   header .menu-hamburger-group .menu ul li a span {
     display: none;
+  }
+  header .menu-hamburger-group .menu ul li:hover {
+    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
   }
   header .menu-hamburger-group .menu ul .active {
     border-right: none;
