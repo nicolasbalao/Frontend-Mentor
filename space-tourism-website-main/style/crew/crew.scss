@@ -8,8 +8,6 @@
     background-image: url("../../assets/crew/background-crew-mobile.jpg");
     background-size: cover;
     color: white;
-
-    font-size: 62.5%;
   }
 }
 
@@ -22,7 +20,7 @@
     background-size: cover;
     color: white;
 
-    font-size: 62.5%;
+    overflow: hidden;
   }
 }
 
@@ -36,7 +34,17 @@
     color: white;
 
     height: 100vh;
+  }
+}
 
-    font-size: 62.5%;
+@media screen and (min-width: 1440px) and (max-height: 880px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 67.5%;
   }
 }

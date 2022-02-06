@@ -1,9 +1,7 @@
 //change active navbar
 
 const activeDestination = document.querySelector(".Destination");
-const activeToRemove = document.querySelector(".active");
 
-activeToRemove.classList.remove("active");
 activeDestination.classList.add("active");
 
 //Change content for destination
@@ -30,8 +28,6 @@ function updateData(_planet) {
       });
     });
 
-  document.querySelector(".active").classList.remove("active");
+  document.querySelector(".navigation .active").classList.remove("active");
   document.querySelector(`.${_planet}`).classList.add("active");
 }
-
-updateData();

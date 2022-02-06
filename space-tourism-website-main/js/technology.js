@@ -2,6 +2,10 @@ const imageTech = document.querySelector(".content__imageTech img");
 const nameTech = document.querySelector(".content__description_nameTech");
 const descriptionTech = document.querySelector(".content__description_text p");
 
+const navBarDestination = document.querySelector(".Technology");
+
+navBarDestination.classList.add("active");
+
 function updateData(_name, _id) {
   fetch("../js/data.json")
     .then((rep) => rep.json())

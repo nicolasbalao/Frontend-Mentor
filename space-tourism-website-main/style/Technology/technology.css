@@ -32,8 +32,8 @@ body {
     padding: 1.5rem 2.4rem;
   }
   header .logo {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
   }
   header .logo img {
     width: 100%;
@@ -55,6 +55,7 @@ body {
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(81px);
             backdrop-filter: blur(81px);
+    z-index: 100;
     position: fixed;
     right: 0;
     top: 0;
@@ -103,7 +104,7 @@ body {
     font-family: "Barlow Condensed";
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
     color: white;
   }
@@ -212,7 +213,6 @@ body {
     background: url("../../assets/technology/background-technology-mobile.jpg");
     background-size: cover;
     color: white;
-    font-size: 62.5%;
   }
 }
 
@@ -222,8 +222,8 @@ body {
   }
   header .logo {
     margin-top: 0.5rem;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
   }
   header .menu-hamburger-group .hamburger {
     display: none;
@@ -245,16 +245,17 @@ body {
   }
   header .menu-hamburger-group .menu ul li {
     padding: 3.95rem 0rem 3.7rem 0rem;
+    border-bottom: 3px solid transparent;
   }
   header .menu-hamburger-group .menu ul li a {
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 2.36px;
   }
   header .menu-hamburger-group .menu ul li a span {
     display: none;
   }
   header .menu-hamburger-group .menu ul li:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
   }
   header .menu-hamburger-group .menu ul .active {
     border-right: none;
@@ -314,7 +315,6 @@ body {
     background: url("../../assets/technology/background-technology-tablet.jpg");
     background-size: cover;
     color: white;
-    font-size: 62.5%;
   }
 }
 
@@ -332,10 +332,10 @@ body {
   }
   header .menu-hamburger-group .menu ul li a {
     opacity: 0.7;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   header .menu-hamburger-group .menu ul li a span {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: unset;
     margin-right: 0.35rem;
   }
@@ -356,7 +356,7 @@ body {
     content: "";
     background-color: #979797;
     opacity: 0.3;
-    height: 1px;
+    height: 0.2rem;
     width: 57%;
     top: 50%;
     left: -54%;
@@ -433,7 +433,24 @@ body {
     background: url("../../assets/technology/background-technology-desktop.jpg");
     background-size: cover;
     color: white;
-    font-size: 62.5%;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-height: 880px) {
+  html {
+    font-size: 52%;
+  }
+  .content {
+    -webkit-box-pack: unset;
+        -ms-flex-pack: unset;
+            justify-content: unset;
+    gap: 10rem;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 67.5%;
   }
 }
 /*# sourceMappingURL=technology.css.map */

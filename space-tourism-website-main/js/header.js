@@ -13,17 +13,17 @@ document.write(`<div class="logo">
   />
 
   <ul>
-    <li class="Home active">
+    <li class="Home">
       <a href="../index.html"> <span>00</span> Home</a>
     </li>
     <li class="Destination">
-      <a href="./destination-moon.html"><span>01</span> Destination</a>
+      <a href="./destination.html"><span>01</span> Destination</a>
     </li>
     <li class="Crew">
-      <a href="./crew-commander.html"><span>02</span> Crew</a>
+      <a href="./crew.html"><span>02</span> Crew</a>
     </li>
     <li class="Technology">
-      <a href="./technology-vehicle.html"><span>03</span> Technology</a>
+      <a href="./technology.html"><span>03</span> Technology</a>
     </li>
   </ul>
 </nav>

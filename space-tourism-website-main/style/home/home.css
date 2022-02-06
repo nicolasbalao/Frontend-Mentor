@@ -32,8 +32,8 @@ body {
     padding: 1.5rem 2.4rem;
   }
   header .logo {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
   }
   header .logo img {
     width: 100%;
@@ -55,6 +55,7 @@ body {
     background: rgba(255, 255, 255, 0.04);
     -webkit-backdrop-filter: blur(81px);
             backdrop-filter: blur(81px);
+    z-index: 100;
     position: fixed;
     right: 0;
     top: 0;
@@ -103,7 +104,7 @@ body {
     font-family: "Barlow Condensed";
     text-decoration: none;
     text-transform: uppercase;
-    font-size: 16px;
+    font-size: 1.6rem;
     font-weight: normal;
     color: white;
   }
@@ -137,12 +138,12 @@ body {
   .content .description .little-title {
     color: #d0d6f9;
     font-family: "Barlow Condensed";
-    font-size: 16px;
+    font-size: 1.6rem;
     letter-spacing: 2.7px;
   }
   .content .description .big-title {
     margin-top: 2rem;
-    font-size: 80px;
+    font-size: 8rem;
   }
   .content .description .para-description {
     margin-top: 2.2rem;
@@ -150,18 +151,18 @@ body {
   .content .description .para-description p {
     color: #d0d6f9;
     padding: 0rem 2.4rem;
-    font-size: 15px;
+    font-size: 1.5rem;
     font-family: "Barlow";
     line-height: 25px;
     text-align: center;
   }
   .content .explore .btn-explore {
     font-family: "Bellefair";
-    font-size: 22px;
+    font-size: 2.2rem;
     background-color: white;
     text-align: center;
-    width: 150px;
-    height: 150px;
+    width: 15rem;
+    height: 15rem;
     border: none;
     border-radius: 50%;
     cursor: pointer;
@@ -169,6 +170,10 @@ body {
   .content .explore .btn-explore:hover {
     -webkit-box-shadow: 0px 0px 2px 60px rgba(100, 96, 96, 0.1);
             box-shadow: 0px 0px 2px 60px rgba(100, 96, 96, 0.1);
+  }
+  .content .explore .btn-explore a {
+    text-decoration: none;
+    color: black;
   }
   html {
     background-image: url("../../assets/home/background-home-mobile.jpg");
@@ -183,8 +188,8 @@ body {
   }
   header .logo {
     margin-top: 0.5rem;
-    width: 48px;
-    height: 48px;
+    width: 4.8rem;
+    height: 4.8rem;
   }
   header .menu-hamburger-group .hamburger {
     display: none;
@@ -206,16 +211,17 @@ body {
   }
   header .menu-hamburger-group .menu ul li {
     padding: 3.95rem 0rem 3.7rem 0rem;
+    border-bottom: 3px solid transparent;
   }
   header .menu-hamburger-group .menu ul li a {
-    font-size: 14px;
+    font-size: 1.4rem;
     letter-spacing: 2.36px;
   }
   header .menu-hamburger-group .menu ul li a span {
     display: none;
   }
   header .menu-hamburger-group .menu ul li:hover {
-    border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+    border-color: rgba(255, 255, 255, 0.3);
   }
   header .menu-hamburger-group .menu ul .active {
     border-right: none;
@@ -229,26 +235,26 @@ body {
     gap: 15.5rem;
   }
   .content .description .little-title {
-    font-size: 20px;
+    font-size: 2rem;
     letter-spacing: 3.38px;
   }
   .content .description .big-title {
     margin-top: 1.3rem;
-    font-size: 150px;
+    font-size: 15rem;
   }
   .content .description .para-description {
     margin-top: 1.2rem;
   }
   .content .description .para-description p {
     padding: 0rem 16rem;
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 28px;
     text-align: unset;
   }
   .content .explore .btn-explore {
-    width: 242px;
-    height: 242px;
-    font-size: 32px;
+    width: 24.2rem;
+    height: 24.2rem;
+    font-size: 3.2rem;
   }
   html {
     background-image: url("../../assets/home/background-home-tablet.jpg");
@@ -271,10 +277,10 @@ body {
   }
   header .menu-hamburger-group .menu ul li a {
     opacity: 0.7;
-    font-size: 16px;
+    font-size: 1.6rem;
   }
   header .menu-hamburger-group .menu ul li a span {
-    font-size: 16px;
+    font-size: 1.6rem;
     display: unset;
     margin-right: 0.35rem;
   }
@@ -295,7 +301,7 @@ body {
     content: "";
     background-color: #979797;
     opacity: 0.3;
-    height: 1px;
+    height: 0.2rem;
     width: 57%;
     top: 50%;
     left: -54%;
@@ -323,7 +329,7 @@ body {
   }
   .content .description .little-title {
     opacity: 0.7;
-    font-size: 28px;
+    font-size: 2.8rem;
     letter-spacing: 4.72px;
     line-height: 33, 6px;
     margin-bottom: 2.5rem;
@@ -342,13 +348,25 @@ body {
     margin-top: 10.8rem;
   }
   .content .explore .btn-explore {
-    width: 274px;
-    height: 274px;
+    width: 27.4rem;
+    height: 27.4rem;
   }
   html {
     background-image: url("../../assets/home/background-home-desktop.jpg");
     background-size: cover;
     color: white;
+  }
+}
+
+@media screen and (min-width: 1440px) and (max-height: 880px) {
+  html {
+    font-size: 52%;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  html {
+    font-size: 67.5%;
   }
 }
 /*# sourceMappingURL=home.css.map */

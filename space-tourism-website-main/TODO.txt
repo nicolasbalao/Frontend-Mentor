@@ -1,10 +1,9 @@
 -----CSS-------------
 
-.  Check CSS hover effect for explore and header navbar
-.  Rebuild responvive and the end
-.  Page technologie replace img by background for change it in media queries
+
+.  3 Rebuild responvive and the end
+.  2 Fix menu behind text description in mobile
 
 ------JS-------------
 
-.   Init for each page good path for assets and pages (logo header, path page navabar)
-.   Active class ...
+.  1 change active header navbar

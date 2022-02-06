@@ -6,6 +6,9 @@ const namePeople = document.querySelector(".content__description_name");
 const bio = document.querySelector(".content__description_text p");
 
 const test = document.getElementById("0");
+const navBarDestination = document.querySelector(".Crew");
+
+navBarDestination.classList.add("active");
 
 function updateData(_role, _id) {
   console.log("click");
