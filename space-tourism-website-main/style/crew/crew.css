@@ -333,8 +333,6 @@ body {
   }
   header .menu-hamburger-group .menu ul .active {
     border-right: 3px solid white;
-    -webkit-animation: hoverEffect 0.5s ease-in-out;
-            animation: hoverEffect 0.5s ease-in-out;
   }
   header .menu-hamburger-group .hidden {
     display: none;
