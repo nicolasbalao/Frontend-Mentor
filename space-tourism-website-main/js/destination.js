@@ -12,6 +12,9 @@ const namePlanet = document.querySelector(".title-name-planet");
 const textDescription = document.querySelector(".text-description p");
 const valueDistance = document.querySelector(".distance-group .value");
 const valueTime = document.querySelector(".travel-time-group .value");
+const groupDescription = document.querySelector(
+  ".description-caracteristiques-group"
+);
 
 function updateData(_planet) {
   fetch("../js/data.json")
@@ -25,9 +28,21 @@ function updateData(_planet) {
           valueDistance.innerHTML = obj.distance;
           valueTime.innerHTML = obj.travel;
         }
+        animation();
       });
     });
 
   document.querySelector(".navigation .active").classList.remove("active");
   document.querySelector(`.${_planet}`).classList.add("active");
+}
+
+function animation() {
+  //animation
+  imagePlanet.classList.remove("anime--planet");
+  groupDescription.classList.remove("anime--planet");
+
+  void imagePlanet.offsetWidth;
+
+  imagePlanet.classList.add("anime--planet");
+  groupDescription.classList.add("anime--planet");
 }

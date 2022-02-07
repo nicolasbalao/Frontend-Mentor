@@ -1,3 +1,4 @@
+@import "../animation";
 header {
   padding: 2rem 3.8rem;
   .logo {
@@ -26,7 +27,8 @@ header {
 
         li {
           padding: 3.95rem 0rem 3.7rem 0rem;
-          border-bottom: 3px solid transparent;
+          position: relative;
+          //border-bottom: 3px solid transparent;
           a {
             font-size: 1.4rem;
             letter-spacing: 2.36px;
@@ -35,8 +37,20 @@ header {
             }
           }
 
-          &:hover {
-            border-color: rgba($color: #ffffff, $alpha: 0.3);
+          &::after {
+            content: "";
+            position: absolute;
+            height: 3px;
+            width: 0%;
+            background-color: rgba($color: #ffffff, $alpha: 0.3);
+            left: 0;
+            bottom: 0;
+            transition: 0.3s ease;
+          }
+
+          &:hover::after {
+            animation: hoverEffect 0.3s ease-in-out;
+            width: 100%;
           }
         }
 
