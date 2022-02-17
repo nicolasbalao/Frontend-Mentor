@@ -1,0 +1,62 @@
+.CategoryFilter {
+  width: 85%;
+  min-height: 10rem;
+  background-color: hsl(180, 31%, 95%);
+
+  position: relative;
+  top: -3rem;
+
+  border-radius: 5px;
+  box-shadow: 3px black;
+
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CategoryFilter__listItem {
+  display: flex;
+  flex-wrap: wrap;
+  height: 90%;
+  margin: 0.5rem;
+}
+
+.CategoryFilter__listItem--item {
+  display: flex;
+  align-items: center;
+
+  margin: 1.5rem;
+}
+
+.CategoryFilter__listItem--item span {
+  font-size: 13px;
+  font-weight: 700;
+  color: hsl(180, 29%, 50%);
+  margin-right: 0.5rem;
+}
+
+.CategoryFilter__listItem--item__remove {
+  background-color: hsl(180, 29%, 50%);
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 0px 5px 5px 0px;
+  cursor: pointer;
+}
+
+.CategoryFilter__listItem--item__remove img{
+    width: 80%;
+    padding: 0.2rem;
+}
+
+.CategoryFilter__clear {
+  font-size: 15px;
+  color: hsl(180, 8%, 52%);
+  font-weight: 700;
+  margin-right: 10px;
+  cursor: pointer;
+}
