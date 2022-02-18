@@ -5,9 +5,9 @@ Frontend-Monitor project
 
 live: https://stiaudd.github.io/Frontend-Mentor/time-tracking-dashboard-main/#
 
-Caracéristiques: Responsive Interactif
+Caracéristiques: `Responsive` `Interactif`
 
-Tech and Tools: HTML CSS JS
+Tech and Tools: `HTML` `CSS` `JS`
 
 Preview:
 
@@ -16,9 +16,9 @@ Preview:
 
 live: https://stiaudd.github.io/Frontend-Mentor/ecommerce-product-page-main/
 
-characteristics: Responsive Interactif
+characteristics: `Responsive` `Interactif`
 
-Tech and Tools: HTML SASS JS
+Tech and Tools: `HTML` `SASS` `JS`
 
 ### 3: Space tourism multi-page website
 
@@ -26,7 +26,7 @@ live: https://stiaudd.github.io/Frontend-Mentor/space-tourism-website-main/index
 
 characteristics: Responsive Multipages Interactif
 
-Tech and Tools: HTML SASS JS
+Tech and Tools: `HTML` `SASS` `JS`
 
 Preview:
 
@@ -34,6 +34,6 @@ Preview:
 
 live: none
 
-characteristics: Responsive Interactif Premier project React
+characteristics: `Responsive` `Interactif` `Premier project React`
 
-Tech and Tools: React CSS CRA(create-react-app)
+Tech and Tools: `React.JS` `CSS` `CRA(create-react-app)`
