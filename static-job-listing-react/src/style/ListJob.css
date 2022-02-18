@@ -1,3 +1,6 @@
+
+
+
 .JobList{
     width: 90%;
 }
@@ -142,4 +145,63 @@
 
 .JobList__card_category p{
     cursor: pointer;
+}
+
+.JobList__card_category p:hover{
+    background-color: hsl(180, 29%, 50%);
+    color: white;
+}
+
+/* RESPONSIVE */
+@media screen and (min-width: 1000px) {
+    .JobList__card_content{
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .JobList__card_responsive{
+        display: flex;
+        align-items: center;
+        gap: 3rem;
+        margin: 3rem 2rem;
+    }
+
+    .JobList__card_logo{
+        position: unset;
+        width: 9rem;
+        height: 9rem;
+     
+    }
+
+    .JobList__card_company{
+        margin-top: unset;
+        margin-bottom: 1rem;
+    }
+
+    .JobList__card_company_name{
+        font-size: 15px;
+    }
+
+    .JobList__card_jobDescription_list{
+        margin-top: 1.5rem;
+    }
+
+    .JobList__card_sep{
+        display: none;
+    }
+
+    .JobList__card_category{
+        gap: 4rem;
+        
+       
+    }
+
+    .JobList__card_category p {
+        padding: 0.5rem;
+        background-color: hsl(180, 8%, 52%, 0.13);
+        border-radius: 5px;
+    }
+
+
 }

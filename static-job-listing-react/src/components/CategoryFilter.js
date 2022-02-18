@@ -1,6 +1,11 @@
 import "../style/CategoryFilter.css";
 
 function CategoryFilter({ categoryFilter, updateCategoryFilter }) {
+
+  if(categoryFilter.length === 0){
+    return null
+  }
+
   return (
     <div className="CategoryFilter">
       <div className="CategoryFilter__listItem">

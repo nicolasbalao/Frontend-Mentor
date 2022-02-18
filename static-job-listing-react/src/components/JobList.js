@@ -20,30 +20,36 @@ function ListJob({ categoryFilter, updateCategoryFilter }) {
           filterByCategory(job) || categoryFilter.length === 0 ? (
             <li className="JobList__card new" key={job.id}>
               <div className="JobList__card_content">
-                <div className="JobList__card_logo">
-                  <img src={`${job.logo}`} alt="logo-company"></img>
-                </div>
-                <div className="JobList__card_company">
-                  <p className="JobList__card_company_name">{job.company}</p>
-                  {job.new ? (
-                    <span className="JobList__card_company_new">NEW!</span>
-                  ) : null}
-                  {job.featured ? (
-                    <span className="JobList__card_company_featured">
-                      FEATURED
-                    </span>
-                  ) : null}
-                </div>
-                <div className="JobList__card_jobDescription">
-                  <div className="JobList__card_jobDescription_title">
-                    {job.position}
+                <div className="JobList__card_responsive">
+                  <div className="JobList__card_logo">
+                    <img src={`${job.logo}`} alt="logo-company"></img>
                   </div>
-                  <div className="JobList__card_jobDescription_list">
-                    <p>{job.postedAt}</p>
-                    <div className="JobList__card_jobDescription_sep"></div>
-                    <p>{job.contract}</p>
-                    <div className="JobList__card_jobDescription_sep"></div>
-                    <p>{job.locations}</p>
+                  <div className="JobList__card_description">
+                    <div className="JobList__card_company">
+                      <p className="JobList__card_company_name">
+                        {job.company}
+                      </p>
+                      {job.new ? (
+                        <span className="JobList__card_company_new">NEW!</span>
+                      ) : null}
+                      {job.featured ? (
+                        <span className="JobList__card_company_featured">
+                          FEATURED
+                        </span>
+                      ) : null}
+                    </div>
+                    <div className="JobList__card_jobDescription">
+                      <div className="JobList__card_jobDescription_title">
+                        {job.position}
+                      </div>
+                      <div className="JobList__card_jobDescription_list">
+                        <p>{job.postedAt}</p>
+                        <div className="JobList__card_jobDescription_sep"></div>
+                        <p>{job.contract}</p>
+                        <div className="JobList__card_jobDescription_sep"></div>
+                        <p>{job.locations}</p>
+                      </div>
+                    </div>
                   </div>
                 </div>
                 <div className="JobList__card_sep"></div>

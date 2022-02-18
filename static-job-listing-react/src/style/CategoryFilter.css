@@ -48,6 +48,11 @@
   cursor: pointer;
 }
 
+.CategoryFilter__listItem--item__remove:hover{
+  background-color: hsl(180, 14%, 20%);
+  
+}
+
 .CategoryFilter__listItem--item__remove img{
     width: 80%;
     padding: 0.2rem;
@@ -59,4 +64,8 @@
   font-weight: 700;
   margin-right: 10px;
   cursor: pointer;
+}
+
+.CategoryFilter__clear:hover {
+  text-decoration: underline;
 }
