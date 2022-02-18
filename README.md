@@ -5,7 +5,7 @@ Frontend-Monitor project
 
 live: https://stiaudd.github.io/Frontend-Mentor/time-tracking-dashboard-main/#
 
-Caracéristiques: `Responsive` `Interactif`
+Caracéristiques: `Responsive` `Interactif` `Better view in 1440px and 375px`
 
 Tech and Tools: `HTML` `CSS` `JS`
 
@@ -16,7 +16,7 @@ Preview:
 
 live: https://stiaudd.github.io/Frontend-Mentor/ecommerce-product-page-main/
 
-characteristics: `Responsive` `Interactif`
+characteristics: `Responsive` `Interactif` `Better view in 1440px and 375px`
 
 Tech and Tools: `HTML` `SASS` `JS`
 
@@ -26,7 +26,7 @@ live: https://stiaudd.github.io/Frontend-Mentor/space-tourism-website-main/index
 
 characteristics: Responsive Multipages Interactif
 
-Tech and Tools: `HTML` `SASS` `JS`
+Tech and Tools: `HTML` `SASS` `JS` `Better view in 1440px , 900px 375px`
 
 Preview:
 
