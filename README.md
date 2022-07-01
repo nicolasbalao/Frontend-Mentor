@@ -14,7 +14,7 @@ Preview:
 
 ### 2: E-commerce product page
 
-live: https://stiaudd.github.io/Frontend-Mentor/ecommerce-product-page-main/
+live: https://nicolasbalao.github.io/Frontend-Mentor/ecommerce-product-page-main/
 
 characteristics: `Responsive` `Interactif` `Better view in 1440px and 375px`
 
@@ -22,7 +22,7 @@ Tech and Tools: `HTML` `SASS` `JS`
 
 ### 3: Space tourism multi-page website
 
-live: https://stiaudd.github.io/Frontend-Mentor/space-tourism-website-main/index.html
+live: https://nicolasbalao.github.io/Frontend-Mentor/space-tourism-website-main/index.html
 
 characteristics: Responsive Multipages Interactif
 
